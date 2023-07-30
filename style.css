@@ -4,12 +4,27 @@
 }
 body{
     font-family: sans-serif;
+    background-color: #333;
+}
+.padding{
+    margin: 0 15px;
 }
 .max-width{
     max-width: 500px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+}
+.alert-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+.alert {
+    color: red;
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .auto{
     margin: 0 auto;
@@ -18,29 +33,32 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
     border-radius: 18px;
-    box-shadow: 0 0 15px #6c6c6c;
+    /* box-shadow: 0 0 15px #6c6c6c; */
+    box-shadow: 0 8px 8px rgba(143, 143, 143, 0.2);
+    /* overflow: hidden; */
 }
 .wd{
     width: 100%;
     background-color: #efefef;
-    padding: 10px 0;
+    padding: 20px;
     border-radius: 18px;
 }
 .flex{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 .heading{
     display: flex;
     align-items: center;
+    margin-top: 8px;
 }
 form{
     display: flex;
     align-items: center;
     margin: 10px 0;
+    padding: 3px 5px;
 }
 input{
     outline: none;
@@ -50,14 +68,20 @@ input{
 }
 input[type="text"]{
     width: 100%;
-    padding: 6px 40px;
+    padding: 8px 3px;
     border-radius: 5px 0 0 5px;
+    margin: 0 auto;
 }
 input[type="submit"]{
     margin-left: 2px;
     border-radius: 0 5px 5px 0;
     background-color: #92f5e9;
     border-color: #92f5e9;
+}
+input[type="text"]:focus{
+    border-color:rgb(184, 184, 184);
+    background-color: #454545;
+    color: #ffffff;
 }
 button{
     border: 1px solid gray;
@@ -93,6 +117,7 @@ button{
 table{
     border-collapse: collapse;
     width: 100%;
+    margin: 0 auto;
 }
 th,td{
     border: 1px solid #eaeaea;
@@ -104,4 +129,28 @@ td:nth-child(odd){
 th{
     background-color:#f5f5f5;
     text-align: start;
+    margin: 0 3px;
+}
+.save{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.save button{
+    margin: 0 auto;
+    width: 100%;
+    background-color: cadetblue;
+    border-radius: 0 0 5px 5px;
+}
+.time{
+    float: right;
+    color: gray;
+}
+@media screen and  (max-width:500px){
+    .container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
 }
